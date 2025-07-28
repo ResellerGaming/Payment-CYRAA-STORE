@@ -1,101 +1,139 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pembayaran ResellerGaming</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran CYRAA STORE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
       background: black;
       color: white;
-      background-image: radial-gradient(circle at center, #330000, #000000);
+      background-image: radial-gradient(circle at center, #001f1f, #000000);
     }
+
     header, footer {
       text-align: center;
       padding: 2rem;
-      background-color: #1a1a1a;
+      background-color: #0a0a0a;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
     }
+
     .welcome {
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to bottom, #ff0000 0%, #000000 100%);
+      background: linear-gradient(to bottom, #00ffff 0%, #000000 100%);
     }
+
     .welcome h1 {
       color: white;
       font-size: 2rem;
-      text-shadow: 0 0 15px red;
+      text-shadow: 0 0 5px #00ffff,
+                   0 0 15px #00ffff;
     }
+
     .welcome button {
       margin-top: 1rem;
       padding: 1rem 2rem;
-      background-color: #ff0000;
-      color: white;
+      background-color: #00ffff;
+      color: black;
       border: none;
       border-radius: 12px;
       font-size: 1rem;
       cursor: pointer;
-      box-shadow: 0 0 15px red;
+      box-shadow: 0 0 15px #00ffff,
+                  0 0 30px #00ffff;
+      transition: 0.3s;
     }
+
+    .welcome button:hover {
+      background-color: black;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+    }
+
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background: #111;
+      background: #0f0f0f;
       padding: 1rem;
     }
+
     nav a {
-      color: white;
+      color: black;
       text-decoration: none;
       padding: 0.5rem 1rem;
-      background-color: #ff0000;
+      background-color: #00ffff;
       border-radius: 8px;
-      box-shadow: 0 0 10px red;
+      box-shadow: 0 0 10px #00ffff,
+                  0 0 20px #00ffff;
+      transition: 0.3s;
     }
+
+    nav a:hover {
+      background: black;
+      color: #00ffff;
+      border: 1px solid #00ffff;
+    }
+
     section {
       padding: 2rem;
     }
+
     h2 {
-      color: #ff0000;
-      border-bottom: 2px solid #ff0000;
+      color: #00ffff;
+      border-bottom: 2px solid #00ffff;
       padding-bottom: 0.5rem;
+      text-shadow: 0 0 10px #00ffff;
     }
+
     .payment-info {
-      background-color: #1a1a1a;
+      background-color: #0a0a0a;
       padding: 1rem;
       border-radius: 12px;
-      box-shadow: 0 0 10px red;
+      box-shadow: 0 0 10px #00ffff,
+                  0 0 20px #00ffff;
     }
+
     .payment-info p {
       margin: 0.5rem 0;
+      color: #ccffff;
     }
+
     .qris-img {
       max-width: 200px;
       border-radius: 8px;
-      box-shadow: 0 0 10px red;
+      box-shadow: 0 0 10px #00ffff,
+                  0 0 20px #00ffff;
+    }
+
+    footer {
+      background-color: #0a0a0a;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
     }
   </style>
 </head>
 <body>
   <div class="welcome" id="welcome">
-    <h1>Selamat datang di website pembayaran by ResellerGaming</h1>
-<audio id="bg-music" loop>
-  <source src="https://files.catbox.moe/aih943.mp3" type="audio/mpeg">
-</audio>
-
-<button onclick="startMusicAndScroll()">Lanjut Pembayaran</button>
-
-<script>
-  function startMusicAndScroll() {
-    document.getElementById('bg-music').play();
-    document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
+    <h1>Selamat datang di website pembayaran by CYRAA STORE</h1>
+    <audio id="bg-music" loop>
+      <source src="https://files.catbox.moe/aih943.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="startMusicAndScroll()">Lanjut Pembayaran</button>
+    <script>
+      function startMusicAndScroll() {
+        document.getElementById('bg-music').play();
+        document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
   </div>
 
   <div id="main">
@@ -151,7 +189,7 @@
     <section id="bio">
       <h2>Bio Admin</h2>
       <div class="payment-info">
-        <p>Nama: Reseller Gaming</p>
+        <p>Nama: CYRAA STORE</p>
         <p>Pengalaman: 3+ tahun melayani topup game & digital payment</p>
         <p>Platform favorit: Mobile Legends, PUBG, Free Fire</p>
       </div>
@@ -162,4 +200,4 @@
     <p>&copy; 2025 ResellerGaming. All Rights Reserved.</p>
   </footer>
 </body>
-  </html>
+    </html>
